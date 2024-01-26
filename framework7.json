@@ -1,0 +1,19 @@
+{
+  "cwd": "/workspaces/contact7s",
+  "type": [
+    "pwa",
+    "web"
+  ],
+  "name": "contact7s",
+  "framework": "svelte",
+  "template": "split-view",
+  "cssPreProcessor": false,
+  "bundler": "vite",
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkMode": false,
+    "iconFonts": true
+  },
+  "customBuild": false
+}
