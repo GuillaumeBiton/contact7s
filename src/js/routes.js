@@ -10,11 +10,16 @@ import RequestAndLoad from '../pages/request-and-load.svelte';
 import NotFoundPage from '../pages/404.svelte';
 
 import ContactsPage from '../pages/contacts.svelte';
+import ContactPage from '../pages/contact.svelte';
 
 var routes = [
   {
     path: '/',
     component: ContactsPage,
+  },
+  {
+    path: '/contact/:contactId',
+    component: ContactPage,
   },
   {
     path: '/about/',

@@ -80,6 +80,15 @@
                 },
             ]
         },
+        {
+            groupTitle: 'S',
+            groupItems: [
+                {
+                    title: 'Sollase',
+                    link: 'sollase'
+                },
+            ],
+        },
     ];
     
 </script>
@@ -92,7 +101,7 @@
             {#each contactsList as group}
             <ListItem title={group.groupTitle} groupTitle />
             {#each group.groupItems as contact}
-            <ListItem title={contact.title} />
+            <ListItem title={contact.title} link="/contact/{contact.link}" />
             {/each}
             {/each}
         </ListGroup>
