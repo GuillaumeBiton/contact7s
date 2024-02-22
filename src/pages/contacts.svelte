@@ -1,8 +1,8 @@
 <script>
     import { Navbar, Page, List, ListGroup, ListItem, Block } from 'framework7-svelte';
 
-    export let contactsList;
-/*    let contactsList = [
+//    export let contactsList;
+    let contactsList = [
         {
             groupTitle : 'A',
             groupItems: [
@@ -81,11 +81,11 @@
             ]
         },
     ];
-*/    
+    
 </script>
 
 <Page>
-    <Navbar title="contacts"></Navbar>
+    <Navbar title="Contacts" large></Navbar>
     {#if contactsList}
     <List contactsList ul={false} strongIos>
         <ListGroup>
