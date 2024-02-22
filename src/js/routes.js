@@ -9,10 +9,12 @@ import DynamicRoutePage from '../pages/dynamic-route.svelte';
 import RequestAndLoad from '../pages/request-and-load.svelte';
 import NotFoundPage from '../pages/404.svelte';
 
+import ContactsPage from '../pages/contacts.svelte';
+
 var routes = [
   {
     path: '/',
-    component: HomePage,
+    component: ContactsPage,
   },
   {
     path: '/about/',

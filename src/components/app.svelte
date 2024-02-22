@@ -116,9 +116,7 @@
   let f7params = {
     name: 'contact7s', // App name
     theme: 'auto', // Automatic theme detection
-
-
-
+    darkMode: 'auto', // Automatic dark mode
 
     // App store
     store: store,
