@@ -1,7 +1,8 @@
 <script>
-    import { Navbar, Page, List, ListGroup, ListItem } from 'framework7-svelte';
+    import { Navbar, Page, List, ListGroup, ListItem, Block } from 'framework7-svelte';
 
-    let contactsList = [
+    export let contactsList;
+/*    let contactsList = [
         {
             groupTitle : 'A',
             groupItems: [
@@ -80,10 +81,12 @@
             ]
         },
     ];
+*/    
 </script>
 
 <Page>
     <Navbar title="contacts"></Navbar>
+    {#if contactsList}
     <List contactsList ul={false} strongIos>
         <ListGroup>
             {#each contactsList as group}
@@ -94,4 +97,7 @@
             {/each}
         </ListGroup>
     </List>
+    {:else}
+    <Block strong outline inset><p>contacts list is empty</p></Block>
+    {/if}
 </Page>
